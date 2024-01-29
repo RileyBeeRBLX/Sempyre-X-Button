@@ -7,3 +7,8 @@ script.Parent.MouseButton1Click:connect (function()
         frame.Visible = false
        end
 end)
+
+ImageButton.MouseButton1Down:connect(function()
+game:GetService("VirtualInputManager"):SendKeyEvent(true,127,false,game)
+game:GetService("VirtualInputManager"):SendKeyEvent(false,127,false,game)
+end)
